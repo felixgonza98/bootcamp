@@ -33,3 +33,21 @@ rex.cortar_patas()
 rex.saludar()
 rex.decir_genero()
 
+##### HERENCIA ####
+
+class TRex(Dino):
+    def __init__(self, nombre, patas=4, color=None):
+        self.nombre = nombre
+        self.patas = patas
+        self.color= color
+        print("Hola soy un trex y me llamo", self.nombre)
+
+robert = TRex("Roberto el TRex")
+print(robert.ojos)
+
+robert.saludar()
+robert.decir_genero()
+
+robert.esta_vivo()
+
+robert.saludar()
